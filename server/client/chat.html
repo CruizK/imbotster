@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="/socket.io/socket.io.js"></script>
+  <script
+			  src="https://code.jquery.com/jquery-1.12.4.min.js"
+			  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+        crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="css/main.css" />
+  <title>Imbotster</title>
+</head>
+<body>
+  <h1>Hello</h1>
+
+  <form id="chat-form" action="">
+    <ul id="chat">
+
+    </ul>
+    <input type="text" id="message" placeholder="Enter Text Here..."/>
+    <input type="submit" id="submit" value="Send" />
+  </form>
+</body>
+<script>
+var socket = io('http://localhost:3000');
+$(document).ready(function() {
+  $('#chat-form').submit(e => {
+    e.preventDefault();
+    socket.emit('message', {name: name, msg: $('#message').val()});
+    $('#message').val('');
+    return false;
+  });
+
+  socket.on('setName', serverName => {
+    name = serverName;
+  }) 
+
+  socket.on('message', (msg) => {
+    $("#chat").append($('<li>').text(msg));
+  })
+})
+</script>
+</html>
