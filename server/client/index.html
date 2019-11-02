@@ -14,14 +14,34 @@
 </head>
 <body>
   <h1>Hello</h1>
-  <div id="chat">
 
-  </div>
-  <input type="text" id="input" placeholder="Enter Text Here..."/>
-  <input type="submit" id="submit" value="Send" />
+  <form id="chat-form" action="">
+    <ul id="chat">
+
+    </ul>
+    <input type="text" id="message" placeholder="Enter Text Here..."/>
+    <input type="submit" id="submit" value="Send" />
+  </form>
 </body>
 <script>
 var socket = io('http://localhost:3000');
+$(document).ready(function() {
+  let name = '';
+  $('#chat-form').submit(e => {
+    e.preventDefault();
+    console.log({name: name, msg: $("#message").val()})
+    socket.emit('message', {name: name, msg: $('#message').val()});
+    $('#message').val('');
+    return false;
+  });
 
+  socket.on('setName', serverName => {
+    name = serverName;
+  }) 
+
+  socket.on('message', (msg) => {
+    $("#chat").append($('<li>').text(msg));
+  })
+})
 </script>
 </html>
