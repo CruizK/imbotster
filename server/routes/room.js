@@ -1,17 +1,11 @@
 const router = require('express').Router();
 const randomstring = require('randomstring');
 const roomHandler = require('../roomHandler')
+const path = require('path');
 
-router.post('/create', (req, res, next) => {
-  let roomCode = randomstring.generate('7');
-
-  while(rooms[roomCode]) {
-    roomCode = randomstring.generate('7');
-  }
-
-  rooms.players = [1];
-
-  res.json({roomCode, player: 1})
+router.get('/join/:code', (req, res, next) => {
+  let code = req.params.code;
+  res.render('chat.ejs', {code});
 })
 
 router.post('/search', (req, res, next) => {
@@ -24,7 +18,7 @@ router.post('/search', (req, res, next) => {
 
   roomHandler.addRoom({
     code: randomstring.generate('7'),
-    players: 1,
+    players: 0,
     started: false,
   })
 

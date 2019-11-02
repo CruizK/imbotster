@@ -1,17 +1,12 @@
 
-
-let users = 0;
 module.exports = (io) => {
   io.on('connection', (socket) => {
-    users++;
-    socket.emit('setName', "Player" + users);
-    console.log("There is a connection");
-    socket.on('message', (msg) => {
-      io.emit('message', msg.name + ": " + msg.msg);
-    })
+    console.log("A User Has Joined Your Channel")
+
+    require('./roomSocket')(socket);
+
     socket.on('disconnect', () => {
-      console.log("Disconnection");
-      users--;
+      console.log("A User has Left Your Channel");
     })
   })
 }

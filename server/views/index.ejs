@@ -1,0 +1,15 @@
+<%- include('partials/header') -%>
+
+<body>
+  <button id="join-btn">Join Game</button>
+
+  <script>
+  $('#join-btn').click(() => {
+    $.post('/room/search', data => {
+      location.href = location.href + "room/join/" + data.code;
+    })
+  })
+  </script>
+</body>
+
+<%- include('partials/footer') -%>
