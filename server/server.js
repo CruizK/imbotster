@@ -7,6 +7,11 @@ const PORT  = 3000;
 
 app.use(express.static(path.join(__dirname, 'public')));
 
+
+const roomRoutes = require('./routes/room');
+
+app.use('/room', roomRoutes);
+
 app.get('/', (req, res, next) => {
   res.sendFile(__dirname + "/client/index.html");
 })
