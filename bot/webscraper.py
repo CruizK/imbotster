@@ -56,6 +56,7 @@ def get_likes():
 	return res[random.randint(0,len(res)-1)].text
 
 def get_response(tag):
+	 
 	if(tag=='old'):
 		return random.randint(10,52)
 	elif(tag=='name'):
@@ -76,7 +77,11 @@ def get_response(tag):
 	soup = BeautifulSoup(r.content, 'html.parser')
 
 	res = soup.find_all("div", class_=class_)
-	return res[random.randint(0,len(res)-1)].find('b').text
+	if(tag=='overrated-jobs'):
+		random_number = random.choice([i for i in range(0,len(res)-1) if i not in [15]])
+	else:
+		random_number = random.randint(0,len(res)-1)
+	return res[random_number].find('b').text
 
 # get_response('name')
 # get_response('beautiful-colours')	

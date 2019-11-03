@@ -30,7 +30,7 @@ corpus_trainer = ChatterBotCorpusTrainer(bot)
 # # corpus_trainer.train('chatterbot.corpus.english.greetings')
 # # trainer = ListTrainer(bot)
 
-corpus_trainer.train('test')
+corpus_trainer.train('train_data')
 
 
 print('SPEAK SPEAK SPEAK SPEAK SPEAK')
