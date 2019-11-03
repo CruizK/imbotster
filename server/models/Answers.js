@@ -17,7 +17,6 @@ module.exports.GetAnswer = async (question_id) => {
   if(offset < 0) offset = 0;
   
   const answer = await db('answers').select('*').where({question_id}).offset(offset).limit(1);
-  console.log(answer);
   return answer[0];
 }
 

@@ -20,14 +20,12 @@ exports.seed = function(knex) {
       questions[questionCount].answers.push(text[i]);
     }
   }
-  //console.log(questions);
 
   return knex('questions').del()
     .then(async function () {
       // Inserts seed entries
       let qs = []
       let ans = []
-      console.log(questions);
       for(let q in questions) {
         qs.push({id: q, questionText: questions[q].text});
         for(let i = 0; i < questions[q].answers.length; i++) {
