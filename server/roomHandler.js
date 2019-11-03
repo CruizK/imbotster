@@ -56,6 +56,9 @@ module.exports.nextRound = (roomCode) => {
       console.log("NEXT ROUND");
       rooms[i].answers = 0;
       rooms[i].currentPlayer++;
+      if(rooms[i].currentPlayer > 5) {
+        rooms[i].currentPlayer = 1;
+      }
     }
   }
 }

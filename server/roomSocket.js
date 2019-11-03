@@ -33,30 +33,43 @@ module.exports = (io, socket) => {
     io.to(code).emit('questionSelected', question);
     let answer = await Answers.GetAnswer(question.id);
     console.log("BOT ANSWER: " + answer);
-    setTimeout(()=> {
+    setTimeout(async ()=> {
       let room = roomHandler.getRoom(code);
       let name = room.players[0].name;
       let answerCount = roomHandler.addAnswer(code)
       io.to(code).emit('answerSubmitted', name + ": " + answer.answerText, answerCount);
       console.log("" + answerCount + "/5")
       if(answerCount == 4) {
-        roomHandler.nextRound(code);
-        io.to(code).emit('nextRound', 'Player ' + room.currentPlayer);
+        await nextRound(code, io);
       }
     }, 1000 * 5)
     // Also do bot stuff
   })
 
-  socket.on('answer', (code, user, answer, question) => {
+  socket.on('answer', async (code, user, answer, question) => {
     
     let answerCount = roomHandler.addAnswer(code);
     console.log("" + answerCount + "/5")
     io.to(code).emit('answerSubmitted', user + ": " + answer, answerCount);
     if(answerCount == 4) {
-      let room = roomHandler.getRoom(code);
-      roomHandler.nextRound(code);
-      io.to(code).emit('nextRound', 'Player ' + room.currentPlayer);
+      await nextRound(code, io);
     }
     // Log this answer for bot magic;
   })
+}
+
+
+async function nextRound(code, io) {
+  let room = roomHandler.getRoom(code);
+  roomHandler.nextRound(code);
+  io.to(code).emit('nextRound', 'Player ' + room.currentPlayer);
+
+  //The bot is now the current Player
+  if(room.players[0].name == 'Player ' + room.currentPlayer) {
+    const questions = await Questions.GetQuestions();
+    let question = questions[Math.floor(Math.random() * questions.length)];
+    setTimeout(() => {
+      io.to(code).emit('questionSelected', question);
+    }, 1000 * 5)
+  }
 }
