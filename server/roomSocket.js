@@ -87,7 +87,8 @@ module.exports = (io, socket) => {
 async function nextRound(code, io) {
   let room = roomHandler.getRoom(code);
   roomHandler.nextRound(code);
-  if(room.currentPlayer == room.players.length -3) {
+  console.log(room.players.length);
+  if(room.currentPlayer == room.players.length - 1) {
     return io.to(code).emit('voteOff');
   }
   io.to(code).emit('nextRound', 'Player ' + room.currentPlayer);
