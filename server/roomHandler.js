@@ -24,7 +24,6 @@ module.exports.startRoom = (roomCode) => {
       let arr = shuffle([5,4,3,2,1]);
       for(let p = 0; p < rooms[i].players.length; p++) {
         rooms[i].players[p].name = "Player " + arr[p];
-        console.log('pepga');
       }
       return rooms[i];
     }
@@ -43,10 +42,10 @@ module.exports.joinRoom = (roomCode, socket) => {
   }
 }
 
-module.exports.addAnswer = (roomCode, question, answer) => {
-  for(let i = 0; io < rooms.length; i++) {
+module.exports.addAnswer = (roomCode) => {
+  for(let i = 0; i < rooms.length; i++) {
     if(rooms[i].code == roomCode) {
-      rooms[i].answers++;
+      return ++rooms[i].answers;
     }
   }
 }
@@ -54,7 +53,9 @@ module.exports.addAnswer = (roomCode, question, answer) => {
 module.exports.nextRound = (roomCode) => {
   for(let i = 0; i < rooms.length; i++) {
     if(rooms[i].code == roomCode) {
+      console.log("NEXT ROUND");
       rooms[i].answers = 0;
+      rooms[i].currentPlayer++;
     }
   }
 }

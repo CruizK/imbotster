@@ -1,5 +1,6 @@
 const roomHandler = require('./roomHandler');
 const Questions = require('./models/Question');
+const Answers = require('./models/Answers');
 
 module.exports = (io, socket) => {
 
@@ -27,19 +28,35 @@ module.exports = (io, socket) => {
     socket.emit('gotQuestions', questions);
   })
 
-  socket.on('selectQuestion', (code, question) => {
+  socket.on('selectQuestion', async (code, question) => {
     console.log("Question", question, code);
     io.to(code).emit('questionSelected', question);
-
-
+    let answer = await Answers.GetAnswer(question.id);
+    console.log("BOT ANSWER: " + answer);
+    setTimeout(()=> {
+      let room = roomHandler.getRoom(code);
+      let name = room.players[0].name;
+      let answerCount = roomHandler.addAnswer(code)
+      io.to(code).emit('answerSubmitted', name + ": " + answer.answerText, answerCount);
+      console.log("" + answerCount + "/5")
+      if(answerCount == 4) {
+        roomHandler.nextRound(code);
+        io.to(code).emit('nextRound', 'Player ' + room.currentPlayer);
+      }
+    }, 1000 * 5)
     // Also do bot stuff
   })
 
   socket.on('answer', (code, user, answer, question) => {
-    roomHandler.incAnswers
-
-    io.to(code).emit('answerSubmitted', user + ": " + answer);
-
+    
+    let answerCount = roomHandler.addAnswer(code);
+    console.log("" + answerCount + "/5")
+    io.to(code).emit('answerSubmitted', user + ": " + answer, answerCount);
+    if(answerCount == 4) {
+      let room = roomHandler.getRoom(code);
+      roomHandler.nextRound(code);
+      io.to(code).emit('nextRound', 'Player ' + room.currentPlayer);
+    }
     // Log this answer for bot magic;
   })
 }

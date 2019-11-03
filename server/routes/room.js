@@ -15,6 +15,7 @@ roomHandler.addRoom({
     isBot: true
   }],
   answers: 0,
+  currentPlayer: 1,
   started: false
 })
 
@@ -33,6 +34,7 @@ router.post('/search', (req, res, next) => {
       isBot: true
     }],
     answers: 0,
+    currentPlayer: 1,
     started: false,
   })
 
