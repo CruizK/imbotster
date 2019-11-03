@@ -1,0 +1,119 @@
+<!doctype html>
+<title>CSS Grid Template 1</title>
+<style>
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 20%;
+  padding: 0 10px;
+  visibility: hidden;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+</style>
+
+<head>
+
+        <script type="text/javascript" src="home.js"></script>
+        <script type="text/javascript">
+        window.onload = function() {
+                var urlParams = new URLSearchParams(window.location.search);
+                var id = urlParams.get('id'); 
+
+
+                  alert(id);
+         for (var i = 1; i <= id; i++){
+                document.getElementById("slot"+i).style.visibility = "visible";
+         }  
+
+         if ( id == 4){
+              
+              alert(id);
+                document.getElementById("slot"+5).style.visibility = "visible";
+         } 
+         window.location.href = "third.html?id="+id;
+     
+            
+        
+  }
+           
+        </script>
+    </head>
+
+<body>
+        Hi this is second page.
+        <!-- <div class="card">
+                <img src="img_avatar.png" alt="Avatar" style="width:100%">
+                <div class="container">
+                  <h4><b>John Doe</b></h4> 
+                  <p>Architect & Engineer</p> 
+                </div>
+              </div>
+ -->
+ <table>
+        
+              <div class="row">
+                   
+                    <div class="column">       
+                      <div class="card" id = "slot1">
+                            <center><img src="img_avatar.png" alt="Avatar" style="width:60%"></center>   
+                        <center><h4><b>Am I The Bot?</h4> 
+                            <p>Or Maybe I'm Not!!!!</p></b></center> 
+                      </div>
+                    </div>
+
+                    <div class="column">       
+                            <div class="card" id = "slot2">
+                                  <center><img src="img_avatar.png" alt="Avatar" style="width:60%"></center>   
+                              <center><h4><b>Am I The Bot?</h4> 
+                                  <p>Or Maybe I'm Not!!!!</p></b></center> 
+                            </div>
+                          </div>
+                          <div class="column">       
+                                <div class="card" id = "slot3">
+                                      <center><img src="img_avatar.png" alt="Avatar" style="width:60%"></center>   
+                                  <center><h4><b>Am I The Bot?</h4> 
+                                      <p>Or Maybe I'm Not!!!!</p></b></center> 
+                                </div>
+                              </div>
+                              <div class="column">       
+                                    <div class="card" id = "slot4">
+                                          <center><img src="img_avatar.png" alt="Avatar" style="width:60%"></center>   
+                                      <center><h4><b>Am I The Bot?</h4> 
+                                          <p>Or Maybe I'm Not!!!!</p></b></center> 
+                                    </div>
+                                  </div>
+                                  <div class="column">       
+                                        <div class="card" id = "slot5">
+                                              <center><img src="img_avatar.png" alt="Avatar" style="width:60%"></center>   
+                                          <center><h4><b>Am I The Bot?</h4> 
+                                              <p>Or Maybe I'm Not!!!!</p></b></center> 
+                                        </div>
+                                      </div>
+                                                
+               
+                    
+           
+
+                  </div>
+    
+</body>
