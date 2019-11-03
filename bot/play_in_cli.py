@@ -1,5 +1,5 @@
 from webscraper import get_response
-f = open("/home/jaideep/Desktop/HackSI/Imbotster_repo/imbotster/bot/questionyquestions")
+f = open("questionyquestions")
 qno = -1
 
 qlist=[]
@@ -14,9 +14,10 @@ Tags = ['name', 'beautiful-colours', 'countries', 'top-ten-dream-jobs', 'season'
 while True:
   try:
       qno = int(input())
+      print(qlist[qno])
       ans = get_response(Tags[qno])
       print(ans)
-
+      print("Enter another question number. Or Ctrl C to exit")
   # Press ctrl-c or ctrl-d on the keyboard to exit
   except (KeyboardInterrupt, EOFError, SystemExit):
       break
