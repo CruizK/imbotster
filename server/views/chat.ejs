@@ -11,6 +11,11 @@
     border: 2px solid black;
   }
 
+  .question-span {
+    font-size: 16px;
+    
+  }
+
   #chat {
     height: 300px;
     overflow: scroll;
@@ -62,13 +67,7 @@ $(document).ready(function() {
     return false;
   });
 
-  $('.question-text').click(function() {
-    console.log(this);
-    let index = $(this).attr('index');
-    console.log(index);
-    socket.emit('selectQuestion', code, currentQuestions[index]);
-    console.log("Question selected: " + currentQuestions[index].questionText);
-  })
+
 
   socket.on('joinedRoom', (id) => {
     userId = id;
@@ -77,6 +76,7 @@ $(document).ready(function() {
   socket.on('start', (players) => {
     console.log("You are player: " + players[userId].name);
     user = players[userId].name;
+    
     if(user == questionPlayer) {
       socket.emit('getQuestions');
     }
@@ -89,6 +89,13 @@ $(document).ready(function() {
     for(let i = 0; i < texts.length; i++) {
       $(texts[i]).text(currentQuestions[i].questionText);
     }
+    $('.question-text').click(function() {
+      console.log(this);
+      let index = $(this).attr('index');
+      console.log(index);
+      socket.emit('selectQuestion', code, currentQuestions[index]);
+      console.log("Question selected: " + currentQuestions[index].questionText);
+    })
     $('.questions').show();
   })
 
@@ -100,10 +107,35 @@ $(document).ready(function() {
     }
   })
 
+  socket.on('voteOff', () => {
+    let players = ['Player 1', 'Player 2', 'Player 3', 'Player 4', 'Player 5'];
+    players = players.filter(val => user != val);
+    var texts = $('.question-text');
+    console.log(players);
+    for(let i = 0; i < texts.length; i++) {
+      $(texts[i]).text(players[i]);
+    }
+    $('.questions').show();
+    $('.question-text').click(function() {
+      let index = $(this).attr('index');
+      socket.emit('voteOff', code, players[index]);
+      console.log("You Voted Off : " + players[index]);
+      $('.questions').hide();
+    })
+  })
+
+  socket.on('votedOff', (playerVoted) => {
+    console.log(user);
+    if(user == playerVoted) {
+      location.href += 'fail'
+    }
+    console.log('Player Voted Off: ' + playerVoted);
+  })
+
   socket.on('questionSelected', question => {
     currentQuestion = question;
-    $('.current-question').text("Question is: " + question.questionText);
-    $('.current-question').show();
+    $("#chat").append("<li><span class='question-span'>Question: " + question.questionText + "</span></li>");
+    $('#chat').scrollTop($('#chat')[0].scrollHeight);
     $('.questions').hide();
     if(user != questionPlayer) {
       $('#chat-form').show();

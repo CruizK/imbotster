@@ -62,3 +62,25 @@ module.exports.nextRound = (roomCode) => {
     }
   }
 }
+
+module.exports.voteOff = (code, vote) => {
+  for(let i = 0; i < rooms.length; i++) {
+    if(rooms[i].code == code) {
+      rooms[i].votes[vote] ? rooms[i].votes[vote]++ : rooms[i].votes[vote] = 1;
+      rooms[i].voteCount++;
+    }
+  }
+}
+
+module.exports.removePlayer = (code, player) => {
+  for(let i = 0; i < rooms.length; i++) {
+    if(rooms[i].code == code) {
+      for(let p = 0; p < rooms[i].players.length; p++) {
+        if(rooms[i].players[p].name == player) {
+          rooms[i].players.splice(p, 1);
+          break;
+        }
+      }
+    }
+  }
+}

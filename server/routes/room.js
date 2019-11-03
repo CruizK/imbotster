@@ -8,6 +8,10 @@ router.get('/join/:code', (req, res, next) => {
   res.render('chat.ejs', {code});
 })
 
+router.get('/join/:code/fail', (req, res, next) => {
+  res.render('fail.ejs');
+})
+
 roomHandler.addRoom({
   code: 'test',
   players: [{
@@ -15,6 +19,8 @@ roomHandler.addRoom({
     isBot: true
   }],
   answers: 0,
+  votes: {},
+  voteCount: 0,
   currentPlayer: 1,
   started: false
 })
@@ -34,6 +40,8 @@ router.post('/search', (req, res, next) => {
       isBot: true
     }],
     answers: 0,
+    votes: {},
+    voteCount: 0,
     currentPlayer: 1,
     started: false,
   })
