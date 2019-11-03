@@ -1,0 +1,961 @@
+*What's your name?
+Tim Zhang
+Jovan Partridge
+Alayah Cope
+Chanelle Brett
+Eryk Frank
+Ajwa Molina
+Amiya Ahmed
+Isra Blaese
+Mirza Berg
+Owais Schwartz
+Joann Bird
+Aiza Cresswell
+Frank Holt
+Caio Pearce
+Clifford Gates
+Alessio Marshall
+Neo Massey
+Montague Mohamed
+Carrie Petty
+Lacy Childs
+Christina Hirst
+Nikola Garrison
+Tiarna Downs
+Aamina Hicks
+Antonina Norton
+Isadora Beach
+Abdurahman Wells
+Isaac Rivera
+Brady Delgado
+Patrik Pacheco
+Kiyan Elliott
+Arwen Abbott
+Prisha Sadler
+Parker Floyd
+Kieron Krueger
+Hibah Cleveland
+Georgie Dunne
+Yassin Jacobson
+Eren Glover
+Isla-Mae Noble
+Aliya Macgregor
+Mared Knight
+Gabriella Donald
+Ayva Browne
+Arfa Norton
+Rosalind Ponce
+Luisa Williamson
+Abubakar Bouvet
+Rui Underwood
+Shona Hebert
+*What's your favorite color?
+Blue
+Red
+Purple
+Pink
+Green
+Yellow
+Black
+Cyan
+Orange
+Silver
+Midnight Blue
+Blood Red
+Gold
+Scarlet
+Aqua
+Turquoise
+Magenta
+Amber
+Viridian Green
+White
+Indigo
+Maroon
+Dark Grey
+Violet
+Burgundy
+Light Purple
+Lavender
+Fuchsia
+Hot Pink
+Neon Blue
+Salmon Pink
+Pastel Lilac
+Sky Blue
+Dark Purple
+Baby Blue
+Teal
+Dark Gray
+Brown
+Rose
+Light Goldenrod Yellow
+Neon Green
+Dark Red
+Mustard Yellow
+Cerulean
+Dark Blue
+Lilac
+Dark Yellow
+Grey
+Peach
+Mauve
+*Where are you from?
+United States
+Canada
+United Kingdom
+Japan
+Australia
+Germany
+France
+New Zealand
+Sweden
+Switzerland
+Italy
+Norway
+Russia
+India
+China
+Iceland
+Denmark
+Ireland
+Spain
+England
+Brazil
+Philippines
+Netherlands
+South Korea
+Finland
+Belgium
+Greece
+Poland
+Singapore
+Mexico
+Israel
+Malaysia
+Turkey
+Scotland
+South Africa
+Czech Republic
+Croatia
+Wales
+Austria
+United Arab Emirates
+Portugal
+Egypt
+Malta
+Jamaica
+Taiwan
+Liechtenstein
+Lebanon
+Luxembourg
+Thailand
+Argentina
+*What do you like to do?
+Music Star
+Actor/Actress
+Pro Athlete
+Jet Pilot 
+Author
+CEO of Whatever You Created
+Inventor
+Video Game Tester
+Video Game Designer
+Playboy Photographer
+Animator
+Model
+Video Game Reviewer
+Movie Critic
+Movie Director
+Chocolate Tester
+Race Car Driver
+Travel Advisor / Analyst
+Computer Designer
+Paleontologist
+Animation Voice Actor
+Marine Biologist
+Herpetologist
+Artist
+Astronaut
+President of the United States
+Professional Poker Player
+Stunt Person
+Music Composer
+Biologist
+Scientist
+Engineer
+Stay At Home Parent
+Tour Guide
+Meteorologist
+Baker
+Entertainer
+Astronomer
+YouTuber
+Sports Broadcaster 
+Rapper
+HIt Man
+Illustrator
+Clinical Psychologist
+CIA Agent
+Graphic Novelist
+Video Game Creator
+Comedian
+Food Critic
+Music Manager
+*What's your favorite season?
+Spring
+Summer
+Autumn
+*What's your favorite movie?
+Forrest Gump
+The Godfather
+The Dark Knight
+The Shawshank Redemption
+Star Wars: Episode V - The Empire Strikes Back
+Pulp Fiction
+The Lord of the Rings: The Return of the King
+Back to the Future
+Star Wars: Episode IV - A New Hope
+Terminator 2: Judgment Day
+Red Dragon
+Parasite
+The Lion King
+Avengers: Infinity War
+Titanic
+Jurassic Park
+Saving Private Ryan
+Inception
+The Matrix
+2001: A Space Odyssey
+Marvel's The Avengers
+The Godfather, Part II
+Star Wars: Episode III - Revenge of the Sith
+Citizen Kane
+Toy Story
+Fight Club
+The Wizard of Oz
+GoodFellas
+Avengers: Endgame
+A Clockwork Orange
+Alien
+Harry Potter and the Deathly Hallows, Part 2
+Schindler's List
+The Shining
+The Lord of the Rings: The Fellowship of the Ring
+Raiders Of The Lost Ark
+Finding Nemo
+Captain America: Civil War
+Rocky
+The Green Mile
+Apocalypse Now
+A Nightmare on Elm Street
+Guardians of the Galaxy
+The Nightmare Before Christmas
+Toy Story 3
+Avatar
+Big Hero 6
+Black Panther
+Jaws
+Braveheart
+The Breakfast Club
+Star Wars: The Force Awakens
+*Where is the most interesting place you’ve been?
+United States
+Norway
+France
+Australia
+Italy
+Greece
+United Kingdom
+Japan
+Germany
+Canada
+United Arab Emirates
+Brazil
+Denmark
+Bahamas
+South Africa
+Fiji
+England
+India
+Ireland
+Maldives
+Indonesia
+China
+Singapore
+Egypt
+Spain
+Iceland
+Chile
+New Zealand
+Russia
+Switzerland
+Czech Republic
+Slovakia
+Finland
+Poland
+Ukraine
+Moldova
+Slovenia
+Sweden
+Peru
+Qatar
+Lithuania
+Bosnia and Herzegovina
+South Korea
+Bulgaria
+Wales
+Scotland
+Netherlands
+Belarus
+Albania
+Estonia
+*What's your dream job?
+Cop
+Singer
+Actor/Actress
+Restaurant Owner
+Cartoon Writer
+Advertising Account Executive
+Fire Fighter
+Astronaut
+Author
+Pilot
+Zookeeper
+Event Coordinator
+Janitor
+Stockbroker
+Athlete
+Pornstar
+Teacher
+Cashier
+Animator
+President
+Doctor
+Scientist
+Voice Actor
+*What is your favorite food?
+Subway's Apple Pie Cookie
+Sonic's Pecan Pie Funnel
+IHOP's Dark Chocolate Peppermint Pancakes
+Pizza Hut's Triple Treat Box
+Starbucks's Peppermint Bark Frappuccino
+KFC's Christmas Chicken Sandwich
+Dairy Queen's Candy Cane Blizzard
+Starbucks's Spiced Sweet Cream Cold Brew
+Burger King's Meat Lovers Whopper
+McDonald's Chicken Big Tasty
+*What is your favorite fast food restaurants?
+Olive Garden
+McDonald's
+Subway
+Burger King
+Applebee's
+KFC (Kentucky Fried Chicken)
+Wendy's
+Chick-Fil-A
+Chili's
+Taco Bell
+Five Guys
+Sonic
+Pizza Hut 
+Dairy Queen
+Golden Corral
+Red Lobster
+Red Robin
+Buffalo Wild Wings
+IHOP
+Steak 'n Shake
+Domino's
+The Cheesecake Factory
+Texas Roadhouse
+Jack In the Box
+Pei Wei
+Denny's
+Arby's
+Dunkin' Donuts
+Spoons
+Ponderosa
+Logan's Roadhouse
+Hibachi Grill
+Panda Express
+Smash Burger
+T.G.I. Fridays
+Friendly's
+Chuck E. Cheese
+Fogo de ChÃ£o Brazilian Steakhouse
+Dave and Buster's
+Starbucks
+Chipotle Mexican Grill
+In-N-Out
+Luby's
+Outback Steakhouse
+Rally's
+China House
+BJ's Restaurant & Brewery
+Tim Hortons
+Jollibee
+Twin Peaks
+*What is your favorite camera brand?
+Canon
+Nikon
+Sony
+Olympus
+Casio
+Panasonic
+Pentax
+Lumix
+Kodak
+Samsung
+Polaroid
+Leica
+Diunamai
+Fujifilm
+Vivitar
+Rollei
+GoPro
+Hasselblad
+Yashica
+Minolta
+Apple
+RED
+Ricoh
+Konica Minolta
+Nokia
+Google
+Blackmagic
+Vivotek
+Zeises
+Polo Camera
+Sanyo
+Vision Research
+Cherry Mobile
+SJCAM
+PHOTHO
+Premier
+Gionee
+MyPhone
+Oppo
+Buddymate
+Jenoptik
+Eagle
+Medion
+Power Tech Camera
+Logitech
+Toshiba
+*what is your favorite social media?
+YouTube
+Instagram
+Facebook
+TheTopTens
+Twitter
+Snapchat
+Reddit
+Pinterest
+Musical.ly
+Discord
+Tumblr
+Deviant Art
+BAND
+WhatsApp
+Linkedin
+Skype
+MySpace
+Imgur
+Google Hangouts
+Vine
+ooVoo
+Quora
+AminoApp
+Ranker
+Twitch
+VK
+FurAffinity
+Quotev
+Zucano
+Eyegroove
+Clipsnow.com
+Comvo
+Telegram
+20lines
+Verpri
+Flickr
+Meetup
+Tagged
+Flipboard
+Bebo
+YouNow
+Pump Up
+qmpeople
+The Red Room
+Plotagon
+Pixiv
+Niconico
+Odnoklassniki
+MyAnimeList
+Mastodon
+*What's your favorite song?
+Bohemian Rhapsody - Queen
+Stairway to Heaven - Led Zeppelin
+Imagine - John Lennon
+Smells Like Teen Spirit - Nirvana
+One - Metallica
+Hotel California - Eagles
+Comfortably Numb - Pink Floyd
+Sweet Child O'Mine - Guns N' Roses
+Hey Jude - The Beatles
+Lose Yourself - Eminem
+Mine All Day - Pewdiepie
+Revenge - Captainsparklez
+A Day in the Life - The Beatles
+Hallowed Be Thy Name - Iron Maiden
+Master of Puppets - Metallica
+November Rain - Guns N' Roses
+Fade to Black - Metallica
+Free Bird - Lynyrd Skynyrd
+Like a Rolling Stone - Bob Dylan
+Billie Jean - Michael Jackson
+Wish You Were Here - Pink Floyd
+Numb - Linkin Park
+Livin' on a Prayer - Bon Jovi
+In the End - Linkin Park
+(I Can't Get No) Satisfaction - The Rolling Stones
+Don't Stop Believin' - Journey
+All Star - Smash Mouth
+Bring Me to Life - Evanescence
+American Pie - Don McLean
+Let It Be - The Beatles
+Beat It - Michael Jackson
+2112 - Rush
+My Immortal - Evanescence
+Jesus of Suburbia - Green Day
+Don't Stop Me Now - Queen
+Echoes - Pink Floyd
+Believer - Imagine Dragons
+Dream On - Aerosmith
+Hallelujah - Jeff Buckley
+Another Brick In the Wall - Pink Floyd
+Breaking the Habit - Linkin Park
+Time - Pink Floyd
+21 Guns - Green Day
+Paranoid Android - Radiohead
+Shine on You Crazy Diamond - Pink Floyd
+Good Vibrations - The Beach Boys
+Another One Bites the Dust - Queen
+Chop Suey! - System of a Down
+Thriller - Michael Jackson
+American Idiot - Green Day
+Welcome to the Jungle - Guns N' Roses
+Boulevard of Broken Dreams - Green Day
+*Where would you most like to travel to?
+California
+Florida
+New York
+Texas
+Washington
+Hawaii
+Colorado
+North Carolina
+Massachusetts
+Virginia
+Michigan
+Arizona
+Pennsylvania
+Minnesota
+Illinois
+Vermont
+Maine
+New Hampshire
+Tennessee
+Utah
+Georgia
+Alaska
+North Dakota
+Ohio
+Maryland
+South Dakota
+Wisconsin
+New Mexico
+South Carolina
+Nevada
+Kentucky
+Connecticut
+Rhode Island
+New Jersey
+Arkansas
+Idaho
+Delaware
+Oregon
+Nebraska
+Louisiana
+West Virginia
+Indiana
+Alabama
+Oklahoma
+Iowa
+Mississippi
+Missouri
+Kansas
+Wyoming
+Montana
+*How old are you?
+43
+19
+15
+32
+38
+44
+28
+10
+51
+18
+26
+45
+46
+52
+46
+48
+38
+29
+10
+49
+52
+16
+43
+12
+26
+44
+29
+34
+33
+17
+11
+49
+22
+11
+47
+21
+45
+31
+33
+43
+18
+40
+29
+22
+27
+51
+41
+12
+26
+22
+*How are you?
+Somewhere between better and best.
+All the better now that you asked.
+Much better now that you are with me.
+At minding my own business? Better than most people.
+I am as happy as a tick on a big, fat dog.
+Do you really care?
+Armed and ready!
+My lawyer says I don’t have to answer that question.
+I’ve been going through some crests and troughs in my life. Is everything stable at your end?
+Like you, but better.
+I could really go for a massage.
+I was fine until you asked.
+If I were doing any better, I'd hire you to enjoy it with me.
+I hear good things, but you should never listen to rumors.
+Overworked and underpaid.
+I don't know, you tell me. How am I right now?
+Can't complain. Nobody listens to me anyway.
+If I were any better, I'd be you.
+Not so well, does that bother you?
+I can't complain! It's against the Company Policy.
+Average. Not terrific, not terrible, just average.
+If I were any better, I'd be illegal.
+So far, so good!
+Better now that I'm talking to you.
+Well, I haven't had my morning coffee yet and no one has gotten hurt, so I'd say "pretty good" at this point in time.
+Well, unless the weather has different plans in store.
+I have no way of knowing.
+Living a dream. Please don't wake me up.
+At least there’s plenty of room for improvement!
+I'm pretty standard right now.
+Doing well, unless you have intentions of shooting me.
+Happy and content, thank you.
+Compared to who?
+Do I have to answer?
+Well enough to chat with you if you wish to.
+Going great. Hope this status quo persists for rest of the day.
+Physically? Mentally? Spiritually? Socioeconomically? Financially? I'm not sure how to answer that!?!
+Strange, and getting stranger.
+Not so good, but I plan on lying at my press conference.
+If I had a tail, I would wag it.
+I've heard various opinions: What's yours?
+How am I. . . what?
+Thank you for asking, though you can judge for yourself.
+Why do you ask? Are you a doctor?
+I'm better than I was, but not nearly as good as I'm going to be.
+I think I'm doing OK. How do you think I'm doing?
+I can’t complain, but sometimes I still do.
+I am blessed!
+Way better than I deserve!
+Shhh. . . it's too early to tell.
+I dunno. Is it Friday yet?
+I don’t feel that great, but my hair looks awesome, right?
+I have a pulse, so I must be okay.
+Doing well, unless you have an airborne disease and infect me with some pathogens.
+Oh, you know, every day is better than the next.
+Better than some, not as good as others.
+My psychiatrist told me not to discuss it with strangers.
+I’m trying really hard to avoid ambiguous questions at the moment.
+Wondering how you are.
+How do you think I am?
+I’ll leave that up to your imagination.
+It's a secret.
+Do you want the short or long version?
+I would be lying if I said I’m fine.
+I’m pretty sure I am not obligated to tell you.
+Surviving, I guess.
+Not as good as you.
+In need of some peace and quiet.
+Under renovation.
+Remembering to stay patient.
+On a scale from one to punching someone in the face?
+Dancing to the rhythm of life.
+Imagining myself having a fabulous vacation.
+Horrible, now that I've met you.
+You do not want to know.
+That is a really wonderful question. Ummm...
+In order to answer the question, I need to take you back about ten years. Do you have a moment?
+Living a life of denial and suppressed rage.
+Slowly but surely dying.
+Fair to partly cloudy.
+Groovy!
+Not bad. Could be better. Could be payday.
+I'm better on the inside than I look on the outside
+Great, stellar, fantastic, but dead inside.
+Okay, since my name wasn't in today's obituaries.
+What's with all the questions? You a cop?
+As opposed to what?
+Sunshine all day long!
+You go first so we can compare.
+I'm not sure yet.
+Living the dream, but half the time it's a nightmare.
+Dangerously close to fabulous.
+You're lookin' at it.
+Real terrible, thanks for asking.
+I am high-quality.
+I'm sure you have that information on your screen.
+How much will you pay me if I tell you?
+Living the dream!
+I'm taking over the world.
+Dying.
+Hunting dragons. You?
+I promised myself I would kill the next person who asked me that question, but I like you so I will let you live.
+Rolling with the punches.
+Your attempt at social interaction is hereby acknowledged.
+Incredibly good looking.
+Everything is fine with you around.
+I'd be better if you asked me out.
+Great, but I’m totally biased.
+Getting better with every passing minute.
+Living a dream. Don't wake me up. You may join me. There's plenty of room.
+The best I can be. Assuming you're at your best too.
+I'm still sucking air.
+I’m completely prepared for the end of the world.
+They told me you would ask me that.
+Better than nothing.
+Well, I'm still alive.
+Somewhere between blah and meh.
+I’ll let you know when I figure it all out.
+Do you want an honest answer or the answer you were expecting?
+I'm vertical and breathing.
+Different day, same existence.
+Trying to get on with life, thanks. What about you?
+Trying not to burst into tears. I get an “A” for effort, right?
+Navigating the twists and turns of life. I hope yours is a straight road.
+*What's something most people don's know about you?
+I’m an introvert at heart
+My wife’s nationality is Chinese
+I speak Mandarin Chinese, but not because my wife does
+I lived in Taiwan for two years (unrelated to my wife’s Chinese-ness, but very related to my ability to speak it)
+We sent our daughter (on three different trips) to China, Australia, France, Germany, Spain and Switzerland when she was in high school as part of a program called, People to People Student Ambassadors
+Gandhi has been a moral hero of mine since I was about 17 years old
+I never dated in high school because I lacked confidence with girls until my college years
+I was engaged to be married to another girl before I met my wife
+Breaking the engagement with the other girl had nothing to do with meeting my wife (though it would have made a great story if it had!)
+One of the most startling and rewarding parts of a high school teaching career has been all the former students who have kept in touch and still occasionally drop by to visit, even years later
+One year a student hid in my closet for 45 minutes waiting for me to go home
+I was the last guy anyone would have thought would start a blog
+I still own a flip phone (proof of #12)
+When my wife and I married, we had a grand total of about $27 to our name
+As a kid, I was afraid of heights, so I forced myself to walk on top walls and climb trees and move onto precarious branches to challenge my fear
+My guitar and piano are my creative and emotional outlets
+But I can’t hit the right note with my voice if my life depended on it (I’m glad it doesn’t)
+Now I start laughing every time I hear her stop, knowing what she’s doing
+In high school, I wanted to become a rich and famous guitarist in a rich and famous rock band
+I was never in a rock band
+I live in Southern California, 20 minutes from the beach, a couple hours from the snow and almost always in the warmth
+I get teary-eyed watching movies about families (especially parent-child relationships) and overcoming moral challenges
+I’ve started writing 5 different books over the last 25 years or so
+I’ve finished one … an eBook
+I started a book on happiness when I was in my 20s
+I’m 47 years young
+I have a horrible memory
+My college major was history with a U
+My favorite place in the world is home
+Every year my wife asks me what I want to do on my birthday (April 5th, in case you were wondering
+Yep, I love pizza
+I always capitalize the word Mom when referring to mine as a sign of the respect I pay motherhood and because my Mom qualifies for so much of it
+I don’t have a favorite color
+I started working with kids as a young adult for the express reason that I wanted to be a great dad and thought working with kids would help me reach that goal
+I have big feet
+I have ugly feet
+When I was young, my feet smelled
+They don’t smell anymore
+I don’t care much that I have big ugly feet
+I don’t want to talk about my feet anymore
+I’m not particularly organized
+I love staring at my wife
+Our family reunions look a lot like a UN Summit Meeting
+I’m 6’4”
+I have hair on my toes
+I know
+Okay, I don’t want to talk about my feet anymore again
+I had long hair in high school (yep, that’s me in the photo)
+I was 24 when I married and 25 when we had our first baby
+I have a weird sense of humor
+*What's up?
+My Blood Pressure. Because of You
+A Preposition
+Your Time is up
+It's a Bird... It's a Plane... It's Superman!
+The Sky
+I'm Sorry, That's Confidential Information
+Gas Prices
+The opposite of down. Didn't You Watch Sesame Street?
+Ceiling
+Nothin much
+*What do you like?
+To spend time with my family
+To play with my dog
+To watch my favorite show in TV.
+To hang out with my friends.
+To study.
+To go to beach with my family.
+To hear my parents love story.
+To read my favorite novel.
+To learn a new language.
+To play volleyball.
+To dance.
+To travel to unknown places.
+To go in a train all alone by myself.
+To watch the night sky.
+To draw and paint.
+To decorate my house.
+To drive my bike.
+To watch a horror movie in night.
+To listen to music.
+*Best pizza toppings?
+Pepperoni
+Cheese
+Pineapple
+Bacon
+Sausage
+Mushrooms
+Chicken
+Onions
+Ham
+Olives
+Mozzarella
+Jalapeno
+Green Peppers
+Tomato Sauce
+Tomato
+Garlic
+BBQ Sauce
+Anchovies
+Black Olives
+Shrimp
+Beef
+Spinach
+Hamburger Meat
+Salami
+Meatballs
+Mac and Cheese
+Buffalo Chicken
+BBQ Chicken
+Peppers
+Eggplant
+Red Peppers
+Canadian Bacon
+Smoked Chicken
+Banana Peppers
+Basil
+Feta Cheese
+Avocado
+Artichoke
+Prawn
+Crushed Red Pepper
+Goat Cheese
+Pepper
+Mayonnaise
+Pickles
+Arugula
+Turkey
+Steak
+Tuna
+Sprinkles
+Broccoli
+*Who is your favorite person?
+Tom Hanks
+Shahrukh Khan
+Michael Jackson
+Lady Gaga
+Britney Spears
+Selena Gomez
+Barun Sobti
+Eminem
+Beyonce Knowles
+Jennifer Lawrence
+Asha Bromfield
+Taylor Swift
+Kanye West
+Johnny Depp
+Justin Bieber
+Jackie Evancho
+Chris Pratt
+Olivia Holt
+Adam Levine
+Mariah Carey
+Elvis Presley
+Nicki Minaj
+Barack Obama
+Carrie Underwood
+Kim Kardashian
+Dwayne Johnson
+Kevin Hart
+Robbie Williams
+Katy Perry
+Robert Downey Jr.
+Axl Rose
+Lionel Messi
+Will Smith
+Cristiano Ronaldo
+Brad Pitt
+Kelly Clarkson
+Michael Jordan
+Rick Harrison
+K.S. Chithra
+Christina Aguilera
+Arnold Schwarzenegger
+Tom Brady
+Shakira
+Donald Trump
+John Cena
+Nawal El Kuwaitia
+Assala Nasri
+Mike Myers
+Diego Maradona
+Sherine
+Peer Van Mladen
