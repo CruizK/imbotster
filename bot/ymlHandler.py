@@ -64,7 +64,7 @@ def generate_yml_from_db():
             answerDict[qList[row[0]-1]].append(row[1])
         else:
             answerDict[qList[row[0]-1]] = [row[1]]
-    write_qDict(answerDict)    
+    return answerDict    
 
 generate_yml_from_db()
 
