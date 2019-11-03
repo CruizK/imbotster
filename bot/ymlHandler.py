@@ -26,11 +26,11 @@ def generate_qDict():
     train_data.close()
     return qDict
 
-def write_qDict(questionDict):
+def write_qDict(answerDict):
     train_data = open("train_data.yml","w")
     train_data.write("conversations:\n")
-    for question in questionDict:
-        answerList = questionDict[question]
+    for question in answerDict:
+        answerList = answerDict[question]
         question = "- - "+question+"\n"
         train_data.write(question)
         for answer in answerList:
@@ -39,7 +39,7 @@ def write_qDict(questionDict):
     train_data.close()
 
 def generate_yml_from_db():
-    qlist = []
+    qList = []
 
     conn = None
     try:
@@ -48,12 +48,23 @@ def generate_yml_from_db():
         print(e)
 
     cursor = conn.cursor()
-    cursor.execute("SELECT * FROM questions")
+    cursor.execute("SELECT questionText FROM questions")
 
     rows = cursor.fetchall()
 
     for row in rows:
-        print(row)
+        qList.append(row[0])
 
-generate_yml_from_db();
+    cursor.execute("SELECT question_id,answerText FROM answers order by question_id")
+
+    rows = cursor.fetchall()
+    answerDict = {}
+    for row in rows:
+        if(qList[row[0]-1] in answerDict):
+            answerDict[qList[row[0]-1]].append(row[1])
+        else:
+            answerDict[qList[row[0]-1]] = [row[1]]
+    write_qDict(answerDict)    
+
+generate_yml_from_db()
 
