@@ -13,7 +13,7 @@ with open('train_data') as f:
 		)
 
 	corpus_trainer = ChatterBotCorpusTrainer(bot)
-	corpus_trainer.train(f)
+	corpus_trainer.train(f.name.split(".")[0])
 
 	def add_answer(question, answer):
 		yaml = ruamel.yaml.YAML()
@@ -21,7 +21,7 @@ with open('train_data') as f:
 		text[question].append(answer)
 
 	def get_answer():
-		
+
 
 # print('SPEAK SPEAK SPEAK SPEAK SPEAK')
 
