@@ -1,3 +1,5 @@
+import sqlite3
+
 def generate_yml():
     questions = open("questionyquestions")
     train_data = open("train_data.yml","w")
@@ -35,3 +37,23 @@ def write_qDict(questionDict):
             answer = "- "+answer+"\n"
             train_data.write(answer)
     train_data.close()
+
+def generate_yml_from_db():
+    qlist = []
+
+    conn = None
+    try:
+        conn = sqlite3.connect('../server/database.db')
+    except Error as e:
+        print(e)
+
+    cursor = conn.cursor()
+    cursor.execute("SELECT * FROM questions")
+
+    rows = cursor.fetchall()
+
+    for row in rows:
+        print(row)
+
+generate_yml_from_db();
+
