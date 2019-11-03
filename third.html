@@ -122,6 +122,9 @@ word-wrap:break-word;
 #demo{
     z-index: 5;
 }
+#yourdiv{
+  overflow-y: auto;
+}
 
 /* Stack the layout on small devices/viewports. */
 @media all and (max-width: 575px) {
@@ -191,7 +194,7 @@ word-wrap:break-word;
        
         
   <article id="mainArticle">
-  <div id="">  
+  
 <div class="members-count">-</div>
   <div class="members-list">-</div>
   <div class="messages"></div>
@@ -200,9 +203,6 @@ word-wrap:break-word;
     <input class="message-form__button" value="Send" type="submit"/>
   </form>
 
-
-  <div id="anchor"></div>
-    </div>
 
 
   <script >
@@ -219,6 +219,10 @@ const drone = new ScaleDrone(CLIENT_ID, {
 });
 
 let members = [];
+
+// let w = members.length;
+// console.log(w);
+
 
 drone.on('open', error => {
   if (error) {
@@ -311,6 +315,21 @@ function createMemberElement(member) {
   el.appendChild(document.createTextNode(name));
   el.className = 'member';
   el.style.color = color;
+  //personlogo(name,color);
+  // const fl = document.createElement('div');
+  // f1.appendChild()
+
+  var img = document.createElement('img');
+img.src = 'img_avatar.png';
+img.style.width = '50px';
+img.style.height = '50px';
+document.getElementById("siteAds").appendChild(img);
+
+ 
+  var para = document.createElement("P");
+  para.innerText = name;
+  para.style.color = color;
+  document.getElementById("siteAds").appendChild(para);
   return el;
 }
 
@@ -367,5 +386,8 @@ function addMessageToListDOM(text, member) {
   </nav>
   <footer id="pageFooter">Footer</footer>
   
-  <div id="siteAds">Ads</div>
+  <div id="siteAds">
+
+  </div>
+
 </body>
