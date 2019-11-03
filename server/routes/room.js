@@ -8,6 +8,16 @@ router.get('/join/:code', (req, res, next) => {
   res.render('chat.ejs', {code});
 })
 
+roomHandler.addRoom({
+  code: 'test',
+  players: [{
+    name: '',
+    isBot: true
+  }],
+  answers: 0,
+  started: false
+})
+
 router.post('/search', (req, res, next) => {
   let rooms = roomHandler.getRooms();
   for(let i = 0; i < rooms.length; i++) {
@@ -18,7 +28,11 @@ router.post('/search', (req, res, next) => {
 
   roomHandler.addRoom({
     code: randomstring.generate('7'),
-    players: 0,
+    players: [{
+      name: '',
+      isBot: true
+    }],
+    answers: 0,
     started: false,
   })
 
