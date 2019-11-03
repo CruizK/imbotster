@@ -4,23 +4,14 @@ from chatterbot.trainers import ChatterBotCorpusTrainer
 from webscraper import get_response
 import ruamel.yaml
 
-with open('train_data') as f:
+bot = ChatBot(
+	'Terminal',
+	storage_adapter='chatterbot.storage.SQLStorageAdapter',
+	database_uri='sqlite:///database.db'
+	)
 
-	bot = ChatBot(
-		'Terminal',
-		storage_adapter='chatterbot.storage.SQLStorageAdapter',
-		database_uri='sqlite:///database.db'
-		)
-
-	corpus_trainer = ChatterBotCorpusTrainer(bot)
-	corpus_trainer.train(f.name.split(".")[0])
-
-	def add_answer(question, answer):
-		yaml = ruamel.yaml.YAML()
-		text = yaml.load(f)
-		text[question].append(answer)
-
-	def get_answer():
+corpus_trainer = ChatterBotCorpusTrainer(bot)
+corpus_trainer.train(f.name.split(".")[0])
 
 
 # print('SPEAK SPEAK SPEAK SPEAK SPEAK')
