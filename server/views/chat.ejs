@@ -1,0 +1,101 @@
+<%- include('partials/header') -%>
+
+<style>
+  .question-text {
+    cursor: pointer;
+    padding: 10px;
+    border: 2px solid transparent;
+  }
+
+  .question-text:hover {
+    border: 2px solid black;
+  }
+</style>
+
+<body>
+<h1 class="current-question"></h1>
+  <form id="chat-form" action="">
+    <ul id="chat">
+
+    </ul>
+    <input type="text" id="message" placeholder="Enter Text Here..."/>
+    <input type="submit" id="answer" value="Send" />
+    <ul class="questions">
+      <li class="question-text" index="0"></li>
+      <li class="question-text" index="1"></li>
+      <li class="question-text" index="2"></li>
+      <li class="question-text" index="3"></li>
+    </ul>
+  </form>
+</body>
+<script>
+var socket = io('http://localhost:3000');
+var userId;
+var user;
+let code = "<%= code %>";
+let currentQuestions;
+let currentQuestion;
+
+$('.current-question').hide();
+$('.questions').hide();
+$(document).ready(function() {
+
+  socket.emit('joinRoom', code);
+  $('#chat-form').submit(e => {
+    e.preventDefault();
+    socket.emit('answer',
+      code, 
+      user,
+      $('#message').val(),
+      currentQuestion, 
+    );
+    $('#message').val('');
+    return false;
+  });
+
+  $('.question-text').click(function() {
+    console.log(this);
+    let index = $(this).attr('index');
+    console.log(index);
+    socket.emit('selectQuestion', code, currentQuestions[index]);
+    console.log("Question selected: " + currentQuestions[index].questionText);
+  })
+
+  socket.on('joinedRoom', (id) => {
+    userId = id;
+  })
+
+  socket.on('start', (players) => {
+    console.log("You are player: " + players[userId].name);
+    user = players[userId].name;
+    if(user == 'Player1') {
+      
+    }
+
+    socket.emit('getQuestions');
+  })
+
+  socket.on('gotQuestions', questions => {
+    currentQuestions = questions;
+    var texts = $('.question-text');
+    console.log(texts);
+    for(let i = 0; i < texts.length; i++) {
+      $(texts[i]).text(currentQuestions[i].questionText);
+    }
+    $('.questions').show();
+  })
+
+  socket.on('questionSelected', question => {
+    currentQuestion = question;
+    $('.current-question').text("Question is: " + question.questionText);
+    $('.current-question').show();
+    $('.questions').hide();
+  })
+
+  socket.on('answerSubmitted', (msg) => {
+    $("#chat").append($('<li>').text(msg));
+  })
+})
+</script>
+
+<%- include('partials/footer') -%>

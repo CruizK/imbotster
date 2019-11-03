@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script
+			  src="https://code.jquery.com/jquery-1.12.4.min.js"
+			  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+        crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="css/main.css" />
+  <title>Imbotster</title>
+</head>
+<body>
+
+<button id="join-btn">Join Game</button>
+
+<script>
+$('#join-btn').click(() => {
+  $.post('/room/search', data => {
+    location.href = location.href + "room/join";
+    localStorage.setItem('roomCode', data.code);
+  })
+})
+</script>
+</body>
+</html>
