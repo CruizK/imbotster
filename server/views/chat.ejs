@@ -14,19 +14,19 @@
 
 <body>
 <h1 class="current-question"></h1>
-  <form id="chat-form" action="">
-    <ul id="chat">
+  <ul id="chat">
 
-    </ul>
+  </ul>
+  <form id="chat-form" action="">
     <input type="text" id="message" placeholder="Enter Text Here..."/>
     <input type="submit" id="answer" value="Send" />
-    <ul class="questions">
-      <li class="question-text" index="0"></li>
-      <li class="question-text" index="1"></li>
-      <li class="question-text" index="2"></li>
-      <li class="question-text" index="3"></li>
-    </ul>
   </form>
+  <ul class="questions">
+    <li class="question-text" index="0"></li>
+    <li class="question-text" index="1"></li>
+    <li class="question-text" index="2"></li>
+    <li class="question-text" index="3"></li>
+  </ul>
 </body>
 <script>
 var socket = io('http://localhost:3000');
@@ -35,9 +35,11 @@ var user;
 let code = "<%= code %>";
 let currentQuestions;
 let currentQuestion;
+let questionPlayer = 'Player 1';
 
 $('.current-question').hide();
 $('.questions').hide();
+$("#chat-form").hide();
 $(document).ready(function() {
 
   socket.emit('joinRoom', code);
@@ -50,6 +52,7 @@ $(document).ready(function() {
       currentQuestion, 
     );
     $('#message').val('');
+    $('#chat-form').hide();
     return false;
   });
 
@@ -68,11 +71,9 @@ $(document).ready(function() {
   socket.on('start', (players) => {
     console.log("You are player: " + players[userId].name);
     user = players[userId].name;
-    if(user == 'Player1') {
-      
+    if(user == questionPlayer) {
+      socket.emit('getQuestions');
     }
-
-    socket.emit('getQuestions');
   })
 
   socket.on('gotQuestions', questions => {
@@ -85,11 +86,22 @@ $(document).ready(function() {
     $('.questions').show();
   })
 
+  socket.on('nextRound', (currentPlayer) => {
+    questionPlayer = currentPlayer;
+    console.log(questionPlayer);
+    if(user == questionPlayer) {
+      socket.emit('getQuestions');
+    }
+  })
+
   socket.on('questionSelected', question => {
     currentQuestion = question;
     $('.current-question').text("Question is: " + question.questionText);
     $('.current-question').show();
     $('.questions').hide();
+    if(user != questionPlayer) {
+      $('#chat-form').show();
+    }
   })
 
   socket.on('answerSubmitted', (msg) => {

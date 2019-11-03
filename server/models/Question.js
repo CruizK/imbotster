@@ -10,10 +10,10 @@ module.exports.QuestionSchema = knex => {
 module.exports.GetQuestions = async () => {
   let count = await db('questions').count('id');
   count = Object.values(count[0])[0];
-  console.log(count);
+  console.log('Question Count: ' + count);
   let offset = Math.floor(Math.random() * count) - 4;
-  console.log(offset);
   if(offset < 0) offset = 0;
+  console.log("Question Offset: " + offset);
 
   const questions = await db('questions').select('*').offset(offset).limit(4);
   return questions;
